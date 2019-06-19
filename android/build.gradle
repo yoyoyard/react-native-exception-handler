@@ -5,7 +5,7 @@ buildscript {
     }
 
     dependencies {
-       
+
     }
 }
 
@@ -23,12 +23,12 @@ def getExtValue(rootProject,key,defaultValue ) {
 }
 
 android {
-    compileSdkVersion getExtValue(rootProject,'compileSdkVersion',23)
-    buildToolsVersion getExtValue(rootProject,'buildToolsVersion', "23.0.1")
+    compileSdkVersion getExtValue(rootProject,'compileSdkVersion', 28)
+    buildToolsVersion getExtValue(rootProject,'buildToolsVersion', "28.0.3")
 
     defaultConfig {
         minSdkVersion getExtValue(rootProject,'minSdkVersion', 16)
-        targetSdkVersion getExtValue(rootProject,'targetSdkVersion', 22)
+        targetSdkVersion getExtValue(rootProject,'targetSdkVersion', 28)
         versionCode 1
         versionName "1.0"
     }
@@ -44,4 +44,3 @@ repositories {
 dependencies {
     implementation 'com.facebook.react:react-native:+'
 }
-  
